@@ -1,15 +1,6 @@
-/* BOOTSTRAP 3.x GLOBAL STYLES
--------------------------------------------------- */
 body {
-  padding-bottom: 40px;
-  color: #5a5a5a;
+  color: #2a2828;
 }
-
-
-
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
   position: absolute;
@@ -21,12 +12,26 @@ body {
 .navbar{
   min-height: 100px;
 }
+.navbar-default {
+  background-color: #f7f7f7;
+  border-color: #e7e7e7;
+  box-shadow: 1px 1px 10px #0f0f0f;
+}
 .navbar-brand{
   padding: 0;
   padding: 5px 15px;
 }
+.navbar-default .navbar-nav>li>a {
+  color: #006837;
+  font-weight: bold;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+  color: black;
+  background-color: #ffd503;
+  font-weight: bold;
+}
 .navbar-nav li a {
-  line-height: 80px;
+  line-height: 75px;
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -39,85 +44,37 @@ body {
 .navbar .navbar-collapse {
   text-align: center;
 }
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
 /* Carousel base class */
-.carousel {
+.main-banner {
   margin-bottom: 60px;
 }
+.banner-home{
+  background-image: url('../images/banner-home.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
 /* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 1;
-}
-
 /* Declare heights because of positioning of img element */
-.carousel .item {
+.main-banner  {
   height: 400px;
-  background-color:#555;
+  background-color:#ccc;
 }
-.carousel img {
+.main-banner img {
   position: absolute;
   top: 0;
   left: 0;
   min-height: 400px;
 }
 
-
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Pad the edges of the mobile views a bit */
-.marketing {
-  padding-left: 15px;
-  padding-right: 15px;
+footer{
+  background: #006837;
 }
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  text-align: center;
-  margin-bottom: 20px;
+footer address p strong{
+  color: #ffd503;
 }
-.marketing h2 {
-  font-weight: normal;
+footer address p, footer address p a, footer address p a:hover{
+  color: white;
 }
-.marketing .col-lg-4 p {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
-}
-.featurette {
-  padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
-  overflow: hidden; /* Vertically center images part 2: clear their floats. */
-}
-.featurette-image {
-  margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
-}
-
-/* Give some space on the sides of the floated elements so text doesn't run right into it. */
-.featurette-image.pull-left {
-  margin-right: 40px;
-}
-.featurette-image.pull-right {
-  margin-left: 40px;
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-size: 50px;
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
-}
-
 
 
 /* RESPONSIVE CSS
