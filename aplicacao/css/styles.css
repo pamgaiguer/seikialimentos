@@ -1,6 +1,16 @@
 body {
   color: #2a2828;
 }
+
+.green-title{
+  color: #006837;
+  font-weight: bold;
+}
+
+#linkModal{
+  cursor: pointer;
+}
+
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
   position: absolute;
@@ -49,9 +59,11 @@ body {
   margin-bottom: 60px;
 }
 .banner-home{
-  background-image: url('../images/banner-home.jpg');
-  background-repeat: no-repeat;
-  background-position: center bottom;
+  background: url('../images/home-banner.jpg') no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 110%;
+  margin-left: -5%;
 }
 /* Since positioning the image, we need to help out the caption */
 /* Declare heights because of positioning of img element */
@@ -67,6 +79,7 @@ body {
 }
 
 footer{
+  margin-top: 60px;
   background: #006837;
 }
 footer address p strong{
