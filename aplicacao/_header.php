@@ -7,18 +7,18 @@
   <link rel="shortcut icon" href="favicon.ico">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'pt', includedLanguages: 'en'}, 'google_translate_element');
-    }
-  </script>
-  <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+   <script type="text/javascript">
+  //   function googleTranslateElementInit() {
+  //     new google.translate.TranslateElement({pageLanguage: 'pt', includedLanguages: 'en'}, 'google_translate_element');
+  //   }
+  // </script>
+   <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </head>
 <body>
-  <div id="google_translate_element">
-<button class="btn btn-primary">Traduzir para ingles</button>
-  </div>
+<!--   <div id="google_translate_element">
+    <button class="btn btn-primary">Traduzir para ingles</button>
+  </div> -->
 
   <div class="navbar-wrapper">
     <div class="container">
@@ -34,7 +34,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="empresa.php">Empresa</a></li>
             <li><a href="propolis.php">Propólis</a></li>
             <li><a href="producao.php">Produção</a></li>

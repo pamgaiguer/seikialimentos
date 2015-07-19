@@ -29,16 +29,13 @@
     </div>
   </div><!-- /.row -->
 
-  <!-- START THE FEATURETTES -->
-
   <hr class="featurette-divider">
 
   <div class="container">
     <div class="col-md-7">
       <h3 class="green-title">Seiki Alimentos</h3>
-      <p>A Seiki Alimentos Naturais é uma empresa brasileira, criada em 1999.</p>
-      <p>Atua no mercado apícola, focado na exportação de própolis bruta.</p>
-      <p>Está situada em Guarulhos, desfrutando da logística entre o Aeroporto <br>Internacional de Guarulhos e da proximidade com a cidade de São Paulo.</p>
+      <p class="text-justify">A Seiki Alimentos Naturais é uma empresa brasileira, criada em 1999. Atua no mercado apícola, focado na exportação de própolis bruta.
+      Está situada em Guarulhos, desfrutando da logística entre o Aeroporto Internacional de Guarulhos e da proximidade com a cidade de São Paulo.</p>
     </div>
     <div class="col-md-5">
 

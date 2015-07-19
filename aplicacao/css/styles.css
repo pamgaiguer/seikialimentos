@@ -10,6 +10,16 @@ body {
 #linkModal{
   cursor: pointer;
 }
+.btn-seiki{
+  background: url('../images/empresa-btn-title.png') no-repeat;
+  width: 159px;
+  height: 43px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-indent: 40px;
+  padding-top: 5px;
+}
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
@@ -35,7 +45,7 @@ body {
   color: #006837;
   font-weight: bold;
 }
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+.menuColor,.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
   color: black;
   background-color: #ffd503;
   font-weight: bold;
@@ -56,7 +66,7 @@ body {
 }
 /* Carousel base class */
 .main-banner {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 .banner-home{
   background: url('../images/home-banner.jpg') no-repeat;
@@ -65,8 +75,41 @@ body {
   width: 110%;
   margin-left: -5%;
 }
-/* Since positioning the image, we need to help out the caption */
-/* Declare heights because of positioning of img element */
+.banner-enterprise{
+  background: url('../images/banner-empresa.jpg') no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 110%;
+  margin-left: -5%;
+}
+.banner-propolis{
+  background: url('../images/banner-propolis.jpg') no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 110%;
+  margin-left: -5%;
+}
+.banner-producao{
+  background: url('../images/banner-producao.jpg') no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 110%;
+  margin-left: -5%;
+}
+.banner-evento{
+  background: url('../images/banner-eventos.jpg') no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 110%;
+  margin-left: -5%;
+}
+.banner-contato{
+  background: url('../images/banner-contato.jpg') no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 110%;
+  margin-left: -5%;
+}
 .main-banner  {
   height: 400px;
   background-color:#ccc;
@@ -77,7 +120,6 @@ body {
   left: 0;
   min-height: 400px;
 }
-
 footer{
   margin-top: 60px;
   background: #006837;
