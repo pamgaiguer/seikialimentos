@@ -82,10 +82,10 @@ footer{
   margin-top: 60px;
   background: #006837;
 }
-footer address p strong{
+footer address strong{
   color: #ffd503;
 }
-footer address p, footer address p a, footer address p a:hover{
+footer address, footer address a, footer address a:hover{
   color: white;
 }
 
