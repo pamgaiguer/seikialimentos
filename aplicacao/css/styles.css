@@ -6,6 +6,20 @@ body {
   color: #006837;
   font-weight: bold;
 }
+#contact-msg{
+  resize: none;
+}
+#btn-submit{
+  background: url('../images/contato-btn-enviar.png') no-repeat;
+  width: 96px;
+  height: 37px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
 
 #linkModal{
   cursor: pointer;
