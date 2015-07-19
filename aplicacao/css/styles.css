@@ -82,11 +82,19 @@ footer{
   margin-top: 60px;
   background: #006837;
 }
+footer address{
+  padding-top: 30px;
+}
 footer address strong{
+  padding-top: 60px;
   color: #ffd503;
 }
-footer address, footer address a, footer address a:hover{
+footer address, footer address a, footer address a:hover, footer p, footer p a, footer p a:hover{
   color: white;
+}
+.copyright-text{
+  padding-top: 110px;
+
 }
 
 
