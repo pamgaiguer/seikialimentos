@@ -16,12 +16,13 @@
       no Congresso Internacional da Apimondia em Daejeon, na Coréia do Sul, com o apoio da <strong>Abemel</strong> (Associação Brasileira de Exportadores
       de Mel) e <strong>Apex Brasil</strong> (Agência Brasileira de Promoção de Exportação e Investimentos)</p>
     </div>
-    <h4 class="text-justify">Venha nos visitar no stand do Brasil, em Daejeon, Coréia do Sul !</h4>
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
     <figure>
       <img src="images/evento-img-lateral.jpg" alt="Evento" class="img-responsive center-block">
       <figcaption></figcaption>
     </figure>
+    <h5 class="text-center">Venha nos visitar no stand do Brasil, em Daejeon, Coréia do Sul !</h4>
+
     </div>
   </div><!-- /.row -->
 </div>
