@@ -1,23 +1,27 @@
-$(".nav a").on("click", function(){
- $(".nav").find(".active").removeClass("active");
- $(this).parent().addClass("active");
-});
+$(document).ready(function() {
+  console.log( "ready!" );
 
-function valida(form) {
-  if (form.nome.value=="") {
-    alert("Preencha o nome corretamente.");
-    form.nome.focus();
-    return false;
-  }
-  var filtro_mail = /^.+@.+\..{2,3}$/
-  if (!filtro_mail.test(form.email.value) || form.email.value=="") {
-    alert("Preencha o e-mail corretamente.");
-    form.email.focus();
-    return false;
-  }
-  if (form.tel.value=="") {
-    alert("Preencha o telefone corretamente.");
-    form.tel.focus();
-    return false;
-  }
-}
+  var target = {
+    'index': 'index.php',
+    'empresa': 'empresa.php',
+    'propolis': 'propolis.php',
+    'producao': 'producao.php',
+    'eventos': 'eventos.php',
+    'contato': 'contato.php'
+  };
+  var pageName = 'index';
+  var address = window.location.href.split('/');
+  $.each(address, function(key, item) {
+    if (item.indexOf("php") != -1) {
+      pageName = item.split('.')[0];
+    }
+  });
+  $('a[href^="' + target[pageName] + '"]').parent().addClass("active");
+
+
+  $(".nav a").on("click", function(){
+    $(".nav").find(".active").removeClass("active");
+    $(this).parent().addClass("active");
+  });
+
+});
