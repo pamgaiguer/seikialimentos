@@ -153,7 +153,29 @@ footer address, footer address a, footer address a:hover, footer p, footer p a, 
   padding-top: 110px;
 
 }
+.carousel-control, .carousel-control:hover, .carousel-control:focus {
+  color: #006837;
+}
 
+.carousel-control.left {
+  background-image: none;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter:none;
+}
+
+.carousel-control.right {
+  background-image: none;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter:none;
+}
+.img-modal{
+
+}
+.img-modal p{
+  vertical-align: middle;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
