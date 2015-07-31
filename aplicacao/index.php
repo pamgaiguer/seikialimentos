@@ -15,17 +15,17 @@
     <div class="col-md-4 text-center">
       <h2 class="green-title">Empresa</h2>
       <p>A Seiki Alimentos Naturais é uma empresa...</p>
-      <p><a class="btn btn-default" href="empresa.html">Ver mais »</a></p>
+      <p><a class="btn btn-success" href="empresa.html">Ver mais »</a></p>
     </div>
     <div class="col-md-4 text-center">
       <h2 class="green-title">Própolis</h2>
       <p>A própolis é um composto resinoso produzido...</p>
-      <p><a class="btn btn-default" href="propolis.html">Ver mais »</a></p>
+      <p><a class="btn btn-success" href="propolis.html">Ver mais »</a></p>
     </div>
     <div class="col-md-4 text-center">
       <h2 class="green-title">Produção</h2>
       <p>A Seiki possui produção própria, situada na...</p>
-      <p><a class="btn btn-default" href="producao.html">Ver mais »</a></p>
+      <p><a class="btn btn-success" href="producao.html">Ver mais »</a></p>
     </div>
   </div><!-- /.row -->
 
@@ -40,7 +40,7 @@
     <div class="col-md-5">
 
       <a data-toggle="modal" data-target="#myModal" id="linkModal">
-        <img src="images/gallery/producao-img-001.jpg">
+        <img src="images/gallery/galeria1_menor.jpg" alt="modal" class="img-responsive">
       </a>
 
     </div>
@@ -60,15 +60,35 @@
           <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
           </ol>
 
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img src="images/gallery/producao-img-001.jpg">
+              <img src="images/gallery/galeria1_menor.jpg" alt="colmeia" class="center-block img-responsive">
+              <div class="carousel-caption">
+                <p>Colméia (beehive)</p>
+              </div>
             </div>
             <div class="item">
-              <img src="images/gallery/propolis-lateral-esquerda.jpg">
+              <img src="images/gallery/galeria2_menor.jpg" alt="alecrim" class="center-block img-responsive">
+              <div class="carousel-caption">
+                <p>Alecrim-do-campo <em>(Baccharis dracuncunlifolia)</em></p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/gallery/galeria3_menor.jpg" alt="apiario" class="center-block img-responsive">
+              <div class="carousel-caption">
+                <p>Apiário (Apiary)</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/gallery/galeria4.JPG" alt="propolis" class="center-block img-responsive">
+              <div class="carousel-caption">
+                <p>Retirada de própolis da caixa (Removing propolis from the hive)</p>
+              </div>
             </div>
           </div>
 
@@ -83,7 +103,7 @@
           </a>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
         </div>
       </div>
     </div>

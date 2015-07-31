@@ -136,6 +136,7 @@ body {
 }
 footer{
   margin-top: 60px;
+  margin-bottom: -20px;
   background: #006837;
 }
 footer address{
