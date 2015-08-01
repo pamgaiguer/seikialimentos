@@ -12,7 +12,7 @@
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
       <p class="btn-seiki">Contato</p>
 
-      <form method="post" id="contactForm">
+      <form action="contato_action.php" method="post" id="contactForm">
         <div class="form-group">
           <label for="nome">Nome</label>
           <input type="text" name="nome" placeholder="Nome" class="form-control" required>
