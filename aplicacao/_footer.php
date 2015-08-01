@@ -10,7 +10,7 @@
       <p>Seiki Alimentos &copy; 2015 - Todos os direitos reservados.</p>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-      <p class="copyright-text text-right">Ilustração por <a href="http://www.edsonyassuo.com.br">Edson Yassuo</a> e desenvolvido por <a href="http://www.pamellagaiguer.com" target="_self">Pamella Gaiguer</a></p>
+      <p class="copyright-text text-right"><small>Ilustração por <a href="http://www.edsonyassuo.com.br">Edson Yassuo</a> e desenvolvido por <a href="http://www.pamellagaiguer.com" target="_self">Pamella Gaiguer</a><small></p>
       </div>
     </div>
   </div>

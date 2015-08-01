@@ -1,6 +1,9 @@
 body {
   color: #2a2828;
 }
+.goog-te-banner{
+  display:none;
+}
 
 .green-title{
   color: #006837;

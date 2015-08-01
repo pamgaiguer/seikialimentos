@@ -11,7 +11,7 @@
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
       <p class="btn-seiki">Eventos</p>
-      <p class="green-title">Apimondia</p>
+      <h3 class="green-title">Apimondia</h3>
       <p class="text-justify">A Apimondia é a Federação Internacional das Associações de Apicultores. Em setembro, estaremos presente
       no Congresso Internacional da Apimondia em Daejeon, na Coréia do Sul, com o apoio da <strong>Abemel</strong> (Associação Brasileira de Exportadores
       de Mel) e <strong>Apex Brasil</strong> (Agência Brasileira de Promoção de Exportação e Investimentos)</p>
