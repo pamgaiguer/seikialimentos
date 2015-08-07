@@ -1,0 +1,82 @@
+FORM
+<form id="contactform" class="clearfix">
+                  <input type="text" value="" name="contact-name" id="contact-name" placeholder="Nome:">
+                  <input type="text" value="" name="contact-email" id="contact-email" placeholder="Email:">
+                  <textarea name="contact-message" id="contact-message" placeholder="Mensagem:"></textarea>
+                  <input type="submit" value="Enviar" name="contact-submit">
+
+                  <!-- CONTACT FORM MESSAGE-->
+                  <div class="lj-contact-message">
+
+                  </div>
+                  <!-- /CONTACT FORM MESSAGE-->
+
+                </form>
+
+
+PHP
+
+$myMail  = 'marcelleprr@gmail.com, marcelle@wav-online.com,alexandre@wav-online.com';
+
+$to      = $myMail;
+$subject = 'Mensagem de '.$_POST['contact_name'];
+$message = $_POST['contact_message'];
+$headers = 'From: '.$_POST['contact_email']. "\r\n" .
+    'Reply-To: '.$_POST['contact_email']. "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+mail($to, $subject, $message, $headers);
+
+?>
+
+
+JS
+var contactEmail = 'marcelleprr@gmail.com, marcelle@wav-online.com,alexandre@wav-online.com'; 
+
+    var msg1 = 'Entraremos em contato em breve!'; //sucesso
+    var msg2 = 'Você precisa entrar com um e-mail válido.'; //email invalido
+    var msg3 = 'E-mail inválido.'; //email invalido
+    var msg4 = 'Preencha todos os campos.'; //campos vazios
+
+
+
+ // Contact form functions
+    $("#contactform").on('submit', function (event) {
+      var input = $('.lj-contact-message');
+        if(!input.is(':empty')) {
+          $('.lj-contact-message').stop(true);
+        }
+        event.preventDefault();
+        event.stopImmediatePropagation();
+
+        var name = $("input#contact-name").val();
+        var email = $("input#contact-email").val();
+        var message = $("textarea#contact-message").val();
+
+        if (name == "" || email == "" || message == "") {
+
+          $(".lj-contact-message").stop(true).html('<i class="fa fa-warning"></i> ' + msg4);
+          
+        }
+        else if (!isValidEmailAddress( email )) {
+          $(".lj-contact-message").stop(true).html('<i class="fa fa-warning"></i> ' + msg3);
+          $("input#contact-email").focus();
+        }
+        else {
+          $.ajax({
+            type: "POST",
+            url: "./php/arquivosend.php",
+            data: {contact_email:email,
+                   contact_name:name,
+                   contact_message:message,
+                   contact_my_email:contactEmail
+                 },
+            success: function () {
+              $(".lj-contact-message").html('<i class="fa fa-check"></i> ' + msg1);
+              $('input#contact-name').val('');
+              $('input#contact-email').val('');
+              $('textarea#contact-message').val('');
+            }
+          });
+        }
+    });

@@ -26,18 +26,30 @@ $(document).ready(function() {
 
 //send mail without page reloading
 
-$('#btn-submit').click(function(){
-  console.log("*** iniciando envio de email ***");
+$('#btn-submit').click(function() {
+  var $requestResult = $("#request-result");
+
   $.ajax({
-    url: '../send_email.php',
-    type:'POST',
+    url: '../contato_action.php',
+    type: 'POST',
     data:{
-      email: email_address,
-      message: message
+      nome: $("#nome").val(),
+      email: $("#email").val(),
+      telefone: $("#telefone").val(),
+      msg: $("#msg").val()
+    },
+    error: function() {
+      $requestResult.append($("<div>", {
+        "class": "alert alert-danger",
+        "text": "E-mail não enviado!"
+      }));
     },
     success: function(msg){
-
-      alert('E-mail enviado com sucesso! Obrigada!');
+      console.log(msg);
+      $requestResult.append($("<div>", {
+        "class": "alert alert-success",
+        "text": "E-mail enviado com sucesso."
+      }));
     }
   });
 });
