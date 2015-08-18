@@ -12,7 +12,7 @@
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
       <p class="btn-seiki">Contato</p>
 
-      <div class="retornoHtml">
+      <div id="retornoHtml">
         <form>
           <div class="form-group">
             <label for="nome">Nome</label>

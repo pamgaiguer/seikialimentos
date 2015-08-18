@@ -28,7 +28,7 @@ $('#btn-submit').click( function(){ /* Quando clicar em #btn */
         var nome  = $('#nome').val();
         var email = $('#email').val();
         var msg   = $('#msg').val();
- 
+
         /* Validando */
         if(nome.length <= 3){
             alert('Por favor, informe seu nome.');
@@ -42,10 +42,10 @@ $('#btn-submit').click( function(){ /* Quando clicar em #btn */
             alert('Por favor, escreva a mensagem de contato');
             return false;
         }
- 
+
         /* construindo url */
         var urlData = "&nome=" + nome + "&email=" + email + "&msg=" + msg ;
- 
+
         /* Ajax */
         $.ajax({
              type: "POST",
@@ -53,7 +53,8 @@ $('#btn-submit').click( function(){ /* Quando clicar em #btn */
              async: true,
              data: urlData, /* informa Url */
              success: function(data) { /* sucesso */
-                 $('#retornoHTML').html(data);
+                console.log("sucesso!");
+                $("#retornoHtml").append("<p class='text-center green-title'>E-mail enviado com sucesso!</p>");
              },
              beforeSend: function() { /* antes de enviar */
                  $('.loading').fadeIn('fast');
