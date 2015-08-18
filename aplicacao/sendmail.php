@@ -6,6 +6,7 @@ require_once('phpmailer/class.phpmailer.php');
 $nome = $_POST['nome'];
 $email = $_POST['email'];
 $msg = $_POST['msg'];
+$body = "";
 
 try{
   $mail = new PHPMailer(true); //new instance with exceptions enabled
@@ -36,7 +37,7 @@ try{
   $mail->FromName = $nome; //nome fornecido pelo cliente
 
   $to = "contato@seikialimentos.com.br"; //enviar para
-  $mail->AddAddres($to);
+  $mail->AddAddress($to);
   $mail->Subject = "Assunto do e-mail"; //Assunto
   $mail->WordWrap = 80; //set wordwrap
 
