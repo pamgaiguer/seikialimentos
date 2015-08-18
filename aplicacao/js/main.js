@@ -24,34 +24,46 @@ $(document).ready(function() {
     $(this).parent().addClass("active");
   });
 
-//send mail without page reloading
+  //iniciando o envio de email via ajax
+  //obtendo valores
+  $("#btn-submit").click(function(){
+    console.log("cliquei");
+    var nome = $("#nome").val();
+    var email = $("#email").val();
+    var msg = $("#msg").val();
+  });
 
-$('#btn-submit').click(function() {
-  var $requestResult = $("#request-result");
+  /* Validando */
+  if(nome.length <= 3){
+    alert('Por favor, informe seu nome');
+    return false;
+  }
+  if(email.length <= 5){
+    alert('Por favor, informe seu email no formato email@provedor.com.br');
+    return false;
+  }
+  if(msg.length <= 5){
+    alert('Escreva uma mensagem');
+    return false;
+  }
 
-  $.ajax({
-    url: '../contato_action.php',
-    type: 'POST',
-    data:{
-      nome: $("#nome").val(),
-      email: $("#email").val(),
-      telefone: $("#telefone").val(),
-      msg: $("#msg").val()
+var urlData = "&nome" + nome + "&email" + email + "&msg" + msg;
+
+$.ajax({
+  type: 'POST',
+  url: 'sendmail.php',
+  async: true,
+  data: urlData,
+    success: function(data){ //caso de sucesso
+      console.log(data);
+      $("#retornoHtml").html(data);
     },
-    error: function() {
-      $requestResult.append($("<div>", {
-        "class": "alert alert-danger",
-        "text": "E-mail não enviado!"
-      }));
+    beforeSend: function () { //antes de enviar
+      $('.loading').fadeIn('fast');
     },
-    success: function(msg){
-      console.log(msg);
-      $requestResult.append($("<div>", {
-        "class": "alert alert-success",
-        "text": "E-mail enviado com sucesso."
-      }));
+    complete:function (){ //completo
+      $('.loading').fadeOut('fast');
     }
   });
-});
 
 });

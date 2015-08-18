@@ -1,6 +1,9 @@
 body {
   color: #2a2828;
 }
+.loading {
+  display: none;
+}
 .goog-te-banner{
   display:none;
 }

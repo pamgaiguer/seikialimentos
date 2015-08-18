@@ -11,30 +11,27 @@
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
       <p class="btn-seiki">Contato</p>
+      <div class="retornoHtml">
+        <form>
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome" class="form-control" required>
+          </div>
 
-        <div class="form-group">
-          <label for="nome">Nome</label>
-          <input type="text" id="nome" name="nome" placeholder="Nome" class="form-control" required>
-        </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="E-mail" class="form-control" required>
+          </div>
 
-        <div class="form-group">
-          <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" placeholder="E-mail" class="form-control" required>
-        </div>
+          <div class="form-group">
+            <label for="msg">Mensagem</label>
+            <textarea name="msg" id="msg" class="form-control" required></textarea>
+          </div>
+          <input type="button" value="Enviar" id="btn-submit">
 
-        <div class="form-group">
-          <label for="telefone">Telefone</label>
-          <input type="tel" id="telefone" name="telefone" placeholder="Telefone" class="form-control" required>
-        </div>
-
-        <div class="form-group">
-          <label for="msg">Mensagem</label>
-          <textarea name="msg" id="msg" class="form-control" required></textarea>
-        </div>
-        <input type="button" value="Enviar" id="btn-submit">
-
-        <div id="request-result"></div>
-
+          <div id="request-result"></div>
+        </form>
+      </div>
     </div>
 
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
