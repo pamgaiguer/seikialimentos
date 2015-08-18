@@ -13,17 +13,17 @@
     <div class="col-md-4 text-center">
       <h2 class="green-title">Empresa</h2>
       <p>A Seiki Alimentos Naturais é uma empresa...</p>
-      <p><a class="btn btn-success" href="empresa.html">Ver mais »</a></p>
+      <p><a class="btn btn-success" href="empresa.php">Ver mais »</a></p>
     </div>
     <div class="col-md-4 text-center">
       <h2 class="green-title">Própolis</h2>
       <p>A própolis é um composto resinoso produzido...</p>
-      <p><a class="btn btn-success" href="propolis.html">Ver mais »</a></p>
+      <p><a class="btn btn-success" href="propolis.php">Ver mais »</a></p>
     </div>
     <div class="col-md-4 text-center">
       <h2 class="green-title">Produção</h2>
       <p>A Seiki possui produção própria, situada na...</p>
-      <p><a class="btn btn-success" href="producao.html">Ver mais »</a></p>
+      <p><a class="btn btn-success" href="producao.php">Ver mais »</a></p>
     </div>
   </div><!-- /.row -->
 </div>
