@@ -11,8 +11,14 @@
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
       <p class="btn-seiki">Contato</p>
+      <h3 class="green-title">Endereço:</h3>
+      <h4> Rua São Paulo, 43, Vila Tijuco - Guarulhos/SP</h4>
+      <h3 class="green-title">Telefone: </h3>
+      <h4><a href="tel:551124091383">+55 11 2409-1383</a></h4>
+      <h3 class="green-title">E-mail:</h3>
+      <h4><a href="mailto:contato@seikialimentos.com.br">contato@seikialimentos.com.br</a></h4>
 
-      <div id="retornoHtml">
+<!--       <div id="retornoHtml">
         <form>
           <div class="form-group">
             <label for="nome">Nome</label>
@@ -31,7 +37,7 @@
           <input type="button" value="Enviar" id="btn-submit">
           <img src="images/loading.gif" class="loading">
         </form>
-      </div>
+      </div> -->
 
     </div>
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
